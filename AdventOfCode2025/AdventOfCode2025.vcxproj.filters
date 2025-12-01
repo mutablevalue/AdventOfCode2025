@@ -18,10 +18,8 @@
     <ClCompile Include="AdventOfCode2025.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input_day_one.txt">
+    <ClCompile Include="day1.cpp">
       <Filter>Header Files</Filter>
-    </Text>
+    </ClCompile>
   </ItemGroup>
 </Project>

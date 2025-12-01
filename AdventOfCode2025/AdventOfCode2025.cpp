@@ -5,7 +5,7 @@
 #include <format>
 #include "day1.cpp"
 
-std::string FileName = "input_day_one.txt";
+std::string FileName = "input_day_one_2.txt";
 
 void WriteToFile(const std::string& Data) {
 	std::string FileCopy = FileName;
@@ -15,6 +15,7 @@ void WriteToFile(const std::string& Data) {
 	std::ofstream Output(OutputFileName);
 	if (!Output.is_open()) return;
 	Output << Data;
+	Output.close();
 }
 
 
@@ -29,7 +30,8 @@ void main() {
 	while (getline(File, Current)) {
 		Lines.push_back(Current);
 	}
-	std::string Output = Solve(Lines);
-	WriteToFile(Output);
+	Solve Output = Solve(Lines);
+	WriteToFile(Output.Final);
+	File.close();
 	return;
 }
