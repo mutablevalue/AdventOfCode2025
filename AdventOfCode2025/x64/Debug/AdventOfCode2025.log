@@ -1,3 +1,3 @@
 ﻿  AdventOfCode2025.cpp
-C:\Users\ciner\source\repos\AdventOfCode2025\AdventOfCode2025\AdventOfCode2025.cpp(55,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\ciner\source\repos\AdventOfCode2025\AdventOfCode2025\AdventOfCode2025.cpp(56,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
   AdventOfCode2025.vcxproj -> C:\Users\ciner\source\repos\AdventOfCode2025\x64\Debug\AdventOfCode2025.exe
