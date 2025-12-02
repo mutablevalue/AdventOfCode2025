@@ -21,5 +21,19 @@
     <ClCompile Include="day1.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="day2.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input_day_one_1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="input_day_one_2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="input_day_two_1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
