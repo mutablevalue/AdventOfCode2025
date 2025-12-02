@@ -35,5 +35,8 @@
     <Text Include="input_day_two_1.txt">
       <Filter>Header Files</Filter>
     </Text>
+    <Text Include="input_day_two_2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
