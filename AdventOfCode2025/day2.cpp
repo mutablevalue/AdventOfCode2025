@@ -20,16 +20,23 @@ public:
 
             for (long long N = Left; N <= Right; N++) {
                 std::string Number = std::to_string(N);
+                int Len = static_cast<int>(Number.size());
 
-                if (Number.size() % 2 != 0) continue;
-
-                int Half = static_cast<int>(Number.size() / 2);
-                if (Number.compare(0, Half, Number, Half, Half) == 0) {
-                    Sum += N;
+                bool Invalid = false;
+                for (int Block = 1; Block <= Len / 2; Block++) {
+                    if (Len % Block != 0) continue;
+                    bool Good = true;
+                    for (int Digit = 0; Digit < Len; Digit++)
+                        if (Number[Digit] != Number[Digit % Block]) { Good = false; break; }
+                    if (Good) { Invalid = true; break; }
                 }
+
+                if (Invalid) Sum += N;
             }
         }
         Final = std::to_string(Sum);
         std::cout << Sum << "\n";
     }
 };
+
+
