@@ -130,6 +130,7 @@
     <ClCompile Include="day3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="input_day_four_1.txt" />
     <Text Include="input_day_one_1.txt" />
     <Text Include="input_day_one_2.txt" />
     <Text Include="input_day_three_1.txt" />
