@@ -127,10 +127,12 @@
     <ClCompile Include="AdventOfCode2025.cpp" />
     <ClCompile Include="day1.cpp" />
     <ClCompile Include="day2.cpp" />
+    <ClCompile Include="day3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input_day_one_1.txt" />
     <Text Include="input_day_one_2.txt" />
+    <Text Include="input_day_three_1.txt" />
     <Text Include="input_day_two_1.txt" />
     <Text Include="input_day_two_2.txt" />
   </ItemGroup>

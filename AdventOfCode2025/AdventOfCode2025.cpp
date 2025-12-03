@@ -3,9 +3,9 @@
 #include <string>
 #include <vector>
 #include <format>
-#include "day2.cpp"
+#include "day3.cpp"
 
-std::string FileName = "input_day_two_1.txt";
+std::string FileName = "input_day_three_1.txt";
 
 void WriteToFile(const std::string& Data) {
 	std::string FileCopy = FileName;

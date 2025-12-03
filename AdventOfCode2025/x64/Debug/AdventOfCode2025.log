@@ -1,5 +1,8 @@
 ﻿  AdventOfCode2025.cpp
 C:\Users\ciner\source\repos\AdventOfCode2025\AdventOfCode2025\AdventOfCode2025.cpp(22,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  day1.cpp
+C:\Users\ciner\source\repos\AdventOfCode2025\AdventOfCode2025\day1.cpp(63,29): warning C4244: '+=': conversion from '__int64' to 'int', possible loss of data
   day2.cpp
+  day3.cpp
   Generating Code...
   AdventOfCode2025.vcxproj -> C:\Users\ciner\source\repos\AdventOfCode2025\x64\Debug\AdventOfCode2025.exe
