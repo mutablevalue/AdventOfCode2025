@@ -133,6 +133,7 @@
     <Text Include="input_day_one_1.txt" />
     <Text Include="input_day_one_2.txt" />
     <Text Include="input_day_three_1.txt" />
+    <Text Include="input_day_three_2.txt" />
     <Text Include="input_day_two_1.txt" />
     <Text Include="input_day_two_2.txt" />
   </ItemGroup>

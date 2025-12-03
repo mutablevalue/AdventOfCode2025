@@ -7,7 +7,7 @@
 
 class Solve {
 public:
-	std::string Final;
+	/*std::string Final;
 
 	Solve(std::vector<std::string>& Object) {
 		int sum = 0;
@@ -35,6 +35,39 @@ public:
 				std::cout << Combined << "\n";
 			}
 			sum += Combined;
+		}
+		std::cout << sum << "\n";
+		Final = std::to_string(sum);
+	}*/
+
+	std::string Final;
+	Solve(std::vector<std::string>& Object) {
+		long long sum = 0;
+		const int AmountOfDigits = 12;
+		for (int i = 0; i < Object.size(); i++) {
+			std::string& Bank = Object[i];
+			int Length = static_cast<int>(Bank.size());
+			int DigitsToRemove = Length - AmountOfDigits;
+			std::string Stack;
+			for (int j = 0; j < Length; j++) {
+				char Voltage = Bank[j];
+
+
+				while (!Stack.empty()
+				&& DigitsToRemove > 0 && Stack.back() < Voltage) 
+				{
+					Stack.pop_back();
+					--DigitsToRemove;
+				}
+
+				Stack.push_back(Voltage);
+				std::cout << Stack << "\n";
+			}
+			if (static_cast<int>(Stack.size()) > AmountOfDigits) {
+				Stack.resize(AmountOfDigits);
+			}
+
+			sum = sum + std::stoll(Stack);
 		}
 		std::cout << sum << "\n";
 		Final = std::to_string(sum);
