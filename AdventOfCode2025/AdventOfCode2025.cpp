@@ -3,14 +3,13 @@
 #include <string>
 #include <vector>
 #include <format>
-#include "day3.cpp"
+#include "day4.cpp"
 
-std::string FileName = "input_day_three_2.txt";
+std::string FileName = "input_day_four_2.txt";
 
 void WriteToFile(const std::string& Data) {
 	std::string FileCopy = FileName;
 	FileCopy.erase(0, 5);
-
 	std::string OutputFileName = "output" + FileCopy;
 	std::ofstream Output(OutputFileName);
 	if (!Output.is_open()) return;
@@ -19,12 +18,12 @@ void WriteToFile(const std::string& Data) {
 }
 
 
-void main() {
+int main() {
 	std::ios::sync_with_stdio(false);
 	std::cin.tie(nullptr);
 
 	std::ifstream File(FileName);
-	if (!(File.is_open())) return;
+	if (!(File.is_open())) return -1;
 	std::string Current;
 	std::vector <std::string> Lines;
 	while (getline(File, Current)) {
@@ -32,6 +31,7 @@ void main() {
 	}
 	Solve Output = Solve(Lines);
 	WriteToFile(Output.Final);
+    std::cout << Output.Final << "\n";
 	File.close();
-	return;
+	return 0;
 }
