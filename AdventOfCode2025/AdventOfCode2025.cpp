@@ -1,11 +1,11 @@
-#include "day6.cpp"
+#include "day7.cpp"
 #include <format>
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
 
-std::string FileName = "input_day_six_2.txt";
+std::string FileName = "input_day_seven_2.txt";
 
 void WriteToFile(const std::string &Data) {
   std::string FileCopy = FileName;
