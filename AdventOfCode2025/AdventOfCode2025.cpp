@@ -1,17 +1,17 @@
-#include "day9.cpp"
+#include "day8.cpp"
 #include <format>
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
 
-std::string FileName = "input_day_nine_2.txt";
+std::string FileName = "input_day_eight_2.txt";
 
 void WriteToFile(const std::string &Data) {
   std::string FileCopy = FileName;
   FileCopy.erase(0, 5);
   std::string OutputFileName = "output" + FileCopy;
-  std::ofstream Output(OutputFileName);
+  std::ofstream Output("./output/" + OutputFileName);
   if (!Output.is_open())
     return;
   Output << Data;
@@ -22,7 +22,7 @@ int main() {
   std::ios::sync_with_stdio(false);
   std::cin.tie(nullptr);
 
-  std::ifstream File(FileName);
+  std::ifstream File("./input/" + FileName);
   if (!(File.is_open()))
     return -1;
   std::string Current;
