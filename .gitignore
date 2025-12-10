@@ -4,5 +4,5 @@ AdventOfCode2025/AdventOfCode2025.vcxproj.filters
 AdventOfCode2025/AdventOfCode2025.vcxproj.filters
 AdventOfCode2025/AdventOfCode2025.vcxproj
 perf.data
-input*
-output*
+input/
+output/
